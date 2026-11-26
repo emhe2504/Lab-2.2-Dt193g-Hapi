@@ -12,7 +12,7 @@ const seriesSchema = new mongoose.Schema({
     },
     rating: {
         type: Number,
-        required: [true, "Ange rating 1-3"],
+        required: [true, "Ange rating 0-3. (0 är för om du inte sett serien)."],
         min: [0, "Rating måste vara minst 0"],
         max: [3, "Rating får vara högst 3"]
     },
