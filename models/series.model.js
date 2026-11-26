@@ -1,5 +1,6 @@
 const mongoose = require("mongoose");
 
+//Schema för en serie
 const seriesSchema = new mongoose.Schema({
     title: {
         type: String,
@@ -12,7 +13,7 @@ const seriesSchema = new mongoose.Schema({
     rating: {
         type: Number,
         required: [true, "Ange rating 1-3"],
-        min: [1, "Rating måste vara minst 1"],
+        min: [0, "Rating måste vara minst 0"],
         max: [3, "Rating får vara högst 3"]
     },
     haveSeen: {
@@ -20,3 +21,6 @@ const seriesSchema = new mongoose.Schema({
         required: true
     }
 });
+
+const Series = mongoose.model("Series", seriesSchema);
+module.exports = Series;

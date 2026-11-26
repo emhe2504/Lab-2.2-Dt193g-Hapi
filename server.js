@@ -20,6 +20,10 @@ const init = async () => {
         await mongoose.connect(process.env.MONGODB_URI);
         console.log("Connected to MongoDB");
 
+        //Routes
+        require("./routes/series.route")(server);
+
+        //Starta server
         await server.start();
         console.log('Server running on %s', server.info.uri);
 
