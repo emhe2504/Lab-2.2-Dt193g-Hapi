@@ -67,3 +67,25 @@ exports.updateSeriesById = async (request, h) => {
         return h.response("Could not update series due to error: " + error).code(500);
     }
 }
+
+//Radera en serie med id
+exports.deleteSeriesById = async (request, h) => {
+    try {
+        const id = request.params.id;
+        const series = await Series.findById(id);
+        if (series) {
+            await series.deleteOne();
+            return h.response("Series deleted successfully").code(200);
+        } else {
+            return h.response("Series not found").code(404);
+        }
+
+    } catch (error) {
+        //Angivet id är ogiltigt
+        if (error.name === "CastError") {
+            return h.response("Invalid series ID").code(400);
+        }
+
+        return h.response("Could not delete series due to error: " + error).code(500);
+    }
+}

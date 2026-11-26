@@ -30,6 +30,13 @@ module.exports = (server) => {
             method: "PUT",
             path: "/series/{id}",
             handler: controller.updateSeriesById
+        },
+        //
+        //Radera en befintlig serie med id
+        {
+            method: "DELETE",
+            path: "/series/{id}",
+            handler: controller.deleteSeriesById
         }
     ])
 }
