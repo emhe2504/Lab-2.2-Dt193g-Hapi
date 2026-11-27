@@ -8,7 +8,7 @@ Lagringen är strukturerad enligt följande:
 
 - "title": "seriens titel",
 - "comment": "kommentar om serien",
-- "rating": nummer 0.3,
+- "rating": nummer 0-3,
 - "haveSeen": true eller false
 
 
@@ -51,4 +51,8 @@ Radera serie utifrån specifikt id:
 
 
 _______________________________________________________________________________________________________________________________
+
+Länk till API:
+
+https://lab-2-2-dt193g-hapi.onrender.com
 
