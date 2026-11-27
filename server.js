@@ -1,5 +1,6 @@
 'use strict';
 
+//Importeringar
 const Hapi = require('@hapi/hapi');
 const mongoose = require("mongoose");
 require("dotenv").config();
