@@ -11,6 +11,8 @@ Lagringen är strukturerad enligt följande:
 - "rating": nummer 0.3,
 - "haveSeen": true eller false
 
+
+Alltså följande datatyper:
 - titel: string,
 - comment: string,
 - rating: integer,
@@ -20,3 +22,17 @@ Inga fält kan lämnas tomma. Rating måste vara 1-3 för serie som setts och 0 
 serien kollats på och false om serien ej kollats på.
 ______________________________________________________________________________________________________________________________
 
+CRUD-operationer och end-points:
+
+- GET: https://lab-2-2-dt193g-hapi.onrender.com/series
+(Hämtar alla serier)
+- GET: https://lab-2-2-dt193g-hapi.onrender.com/series/id
+(Hämtar serie utifrån specifikt id)
+- POST: https://lab-2-2-dt193g-hapi.onrender.com/series
+(Lägger till en serie med seriestruktur i body)
+- PUT: https://lab-2-2-dt193g-hapi.onrender.com/series/id
+(Uppdaterar befintlig serie utifrån specifikt id)
+- DELETE: https://lab-2-2-dt193g-hapi.onrender.com/series/id
+(Raderar serie utifrån specifikt id)
+
+_______________________________________________________________________________________________________________________________
