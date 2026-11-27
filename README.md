@@ -24,17 +24,31 @@ ________________________________________________________________________________
 
 CRUD-operationer och end-points:
 
+Hämtar alla serier:
+
+
 - GET: https://lab-2-2-dt193g-hapi.onrender.com/series
 
-(Hämtar alla serier)
+Hämta serie utifrån specifikt id:
+
+
 - GET: https://lab-2-2-dt193g-hapi.onrender.com/series/{id}
-(Hämtar serie utifrån specifikt id)
+
+Lägga till en serie (med seriestruktur (se ovan) i body):
+
+
 - POST: https://lab-2-2-dt193g-hapi.onrender.com/series
-(Lägger till en serie med seriestruktur (se ovan) i body)
+
+Uppdatera befintlig serie utifrån specifikt id (med seriestruktur (se ovan) i body):
+
+
 - PUT: https://lab-2-2-dt193g-hapi.onrender.com/series/{id}
-(Uppdaterar befintlig serie utifrån specifikt id med seriestruktur (se ovan) i body)
+
+Radera serie utifrån specifikt id:
+
+
 - DELETE: https://lab-2-2-dt193g-hapi.onrender.com/series/{id}
-(Raderar serie utifrån specifikt id)
+
 
 _______________________________________________________________________________________________________________________________
 
